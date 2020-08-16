@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{image.as_p}}
+        <button type="submit">upload </button>
+        </form>
+    </body>
+</html>
